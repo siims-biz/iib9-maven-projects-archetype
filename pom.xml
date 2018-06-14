@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>ch.sbb.maven.archetypes</groupId>
-	<artifactId>iib9-maven-projects</artifactId>
+	<groupId>it.jungbauer</groupId>
+	<artifactId>iib9-maven-project</artifactId>
 	<version>1.1-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
 	<name>IIB9 Maven Projects</name>
 	<description>IBM Integration Bus 9 Maven Project Structure</description>
-	<parent>
-		<groupId>org.sonatype.oss</groupId>
-		<artifactId>oss-parent</artifactId>
-		<version>7</version>
-	</parent>
 	<scm>
-		<connection>scm:git:https://github.com/SchweizerischeBundesbahnen/iib9-maven-projects-archetype.git</connection>
-		<developerConnection>scm:git:https://github.com/SchweizerischeBundesbahnen/iib9-maven-projects-archetype.git</developerConnection>
+		<connection>scm:git:https://github.com/siims-biz/iib9-maven-projects-archetype.git</connection>
+		<developerConnection>scm:git:https://github.com/siims-biz/iib9-maven-projects-archetype</developerConnection>
 	</scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,14 +21,14 @@
 			<extension>
 				<groupId>org.apache.maven.archetype</groupId>
 				<artifactId>archetype-packaging</artifactId>
-				<version>2.2</version>
+				<version>3.0.1</version>
 			</extension>
 		</extensions>
 		<pluginManagement>
 			<plugins>
 				<plugin>
 					<artifactId>maven-archetype-plugin</artifactId>
-					<version>2.2</version>
+					<version>3.0.1</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -59,7 +55,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.1</version>
+						<version>1.6</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
